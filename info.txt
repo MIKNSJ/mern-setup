@@ -1,0 +1,2 @@
+It appears CORS for Express JS is unecessary as the Vite config proxy attribute
+will work.
