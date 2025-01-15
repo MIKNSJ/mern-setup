@@ -6,6 +6,11 @@ export default defineConfig({
     plugins: [react()],
     
     server: {
+        /**
+         * watch: {
+         *     usePolling: true,
+         * }
+        */
         host: "0.0.0.0",
         /**
          * changeOrigin: true, // Change the Origin header to match the backend

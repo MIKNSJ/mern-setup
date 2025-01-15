@@ -7,11 +7,9 @@ Docker is like its own OS whether you are running in on Windows, WSL, or MAC.
 You may see online that people used "host: true" as well as other commands but
 what do you know about copying online it mostly never works.
 
-MongoDB was substituted for PostgreSQL because of high CPU container usage.
 Also, there appears to be a potential security risk if you run PostgreSQL with
 basic credentials. The security risk being a cryptocurrency miner spiking your
-CPU container usage to over 100%. Although that is probably not the reason why
-my container happened to behave that way.
+CPU container usage to over 100%. 
 
 You may notice that the mongo service quite frequently outputs logs in Docker.
 A potential workaround is to create a mongod.conf file with verbosity: 0
@@ -28,3 +26,7 @@ commands, start docker containers in internative mode, or use Docker Desktop.
 
 Please note that he node version imported for Docker is important as older
 verisons may not support React Router v7 and/or Vite applications.
+
+If your Docker container is not behaving properly or you made numerous builds,
+then run docker system prune --all --volumes to free up storage and to reset
+images.
