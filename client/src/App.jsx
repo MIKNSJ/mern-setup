@@ -1,7 +1,5 @@
-import FormTemplate from "./pages/form_template.jsx"
 import HomeTemplate from "./pages/home.jsx"
-import react from "react";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 
 

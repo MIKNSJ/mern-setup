@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 
 

@@ -6,13 +6,18 @@ export default defineConfig({
     plugins: [react()],
     
     server: {
-       proxy: {
-         '/api': {
-           target: 'http://localhost:8080/', 
-         },
-         '/admin': {
-           target: 'http://localhost:8080/', 
-         }
-       }
+        host: "0.0.0.0",
+        /**
+         * changeOrigin: true, // Change the Origin header to match the backend
+         * rewrite: (path) => path.replace(/^\/api/, ''), // Optional: Rewrite '/api' if necessary
+        */
+        proxy: {
+            '/api': {
+                target: 'http://server:8080/', 
+            },
+            '/admin': {
+                target: 'http://server:8080/', 
+            }
+        }
     }
 })
